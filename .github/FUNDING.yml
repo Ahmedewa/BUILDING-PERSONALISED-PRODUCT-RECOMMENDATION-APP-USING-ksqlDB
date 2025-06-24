@@ -1,0 +1,74 @@
+# Supported Funding Models
+
+Use the following platforms to specify funding details:
+
+github: Up to 4 GitHub Sponsors usernames (e.g., [user1, user2])
+patreon: A single Patreon username
+open_collective: A single Open Collective username
+ko_fi: A single Ko-fi username
+tidelift: A single Tidelift platform-name/package-name (e.g., npm/babel)
+community_bridge: A single Community Bridge project-name (e.g., cloud-foundry)
+liberapay: A single Liberapay username
+issuehunt: A single IssueHunt username
+lfx_crowdfunding: A single LFX Crowdfunding project-name (e.g., cloud-foundry)
+polar: A single Polar username
+buy_me_a_coffee: A single Buy Me a Coffee username
+thanks_dev: A single thanks.dev username
+custom: Up to 4 custom sponsorship URLs (e.g., ['link1', 'link2'])## Usage
+
+Specify funding details in a YAML file (e.g., `funding.yml`) at the root of your repository or within the `.github` directory.
+
+```yaml
+github: [user1, user2]
+patreon: patreon_username
+open_collective: open_collective_username
+ko_fi: kofi_username
+tidelift: npm/babel
+community_bridge: cloud-foundry
+liberapay: liberapay_username
+issuehunt: issuehunt_username
+lfx_crowdfunding: cloud-foundry
+polar: polar_username
+buy_me_a_coffee: buymeacoffee_username
+thanks_dev: thanksdev_username
+custom: ['link1', 'link2']
+```
+
+## Notes
+
+*   Only one platform username is allowed for `patreon`, `open_collective`, `ko_fi`, `tidelift`, `community_bridge`, `liberapay`, `issuehunt`, `lfx_crowdfunding`, `polar`, `buy_me_a_coffee`, and `thanks_dev`.
+*   Up to four GitHub usernames or custom URLs can be specified.
+*   The YAML file must be valid.
+*   These funding models enable direct financial support to maintainers and contributors, fostering a sustainable open-source ecosystem.## Display in Repositories
+
+Once the `funding.yml` file is in place, GitHub automatically displays a "Sponsor" button at the top of the repository, providing a direct link to the specified funding platforms. This makes it easy for users who value the project to contribute financially. The platforms will be displayed in the order they are defined in the `funding.yml` file.
+
+## Example `funding.yml`
+
+Here's a more comprehensive example of a `funding.yml` file:
+
+```yaml
+github: [octocat, awesome-org, another-user, fourth-user]
+patreon: thePatreonUser
+open_collective: open-collective-project
+ko_fi: kofi_name
+tidelift: pypi/my-package
+community_bridge: my-community-project
+liberapay: myliberapay
+issuehunt: myissuehunt
+lfx_crowdfunding: my-lfx-project
+polar: mypolar
+buy_me_a_coffee: buymeacoffee_id
+thanks_dev: thanksdev_id
+custom: ['https://custom-donation-url.example.com', 'https://another-custom-url.com', 'https://third-custom-url.net', 'https://fourth-custom.org']
+```
+
+## Best Practices
+
+*   **Keep it updated:** Regularly review and update your `funding.yml` file to ensure the information is accurate and reflects your current funding preferences.
+*   **Prioritize platforms:** Choose the funding platforms that best align with your community and development practices.
+*   **Promote your Sponsor button:** Encourage users to support your work by mentioning the "Sponsor" button in your README, website, and social media.
+*   **Be transparent:** Clearly communicate how the funds will be used to support the project's development and maintenance. This builds trust with your contributors.
+
+By implementing a `funding.yml` file, you're taking a proactive step towards securing the financial sustainability of your open-source project and fostering a stronger connection with your community. This simple addition can make a significant difference in the long-term health and 
+vitality of your project.
